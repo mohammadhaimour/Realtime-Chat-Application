@@ -60,5 +60,6 @@ function outputRoom(room){
 // output users to client
 function outputUsers(users){
     console.log({users});
-    usersNames.innerHTML=`${users.map(user=>`<li>${user.username}</li>`).join('')}`
+    const dev=document.createElement('li');
+    usersNames.innerHTML=`${users.map(user=>`<li>${user.username} <span>•</span> </li>`).join('')}`
 }
